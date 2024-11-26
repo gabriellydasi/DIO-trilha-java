@@ -54,8 +54,9 @@ public class ContaTerminal {
                 }
             }
 
-            // Exibir os dados da conta
-            System.out.printf("Conta = %d\nAgência = %s\nCliente = %s\nSaldo = R$ %.2f\n", numero, agencia, nomeCliente, saldo);
+            // Exibir mensagem
+            // "Olá [Nome Cliente], obrigado por criar uma conta em nosso banco, sua agência é [Agencia], conta [Numero] e seu saldo [Saldo] já está disponível para saque".
+            System.out.printf("Olá, %s! Obrigado por criar uma conta em nosso banco. Sua agência é %s, conta %d e seu saldo R$ %.2f já está disponível para saque.", nomeCliente, agencia, numero, saldo);
 
         } // O 'Scanner' será fechado automaticamente ao final do bloco try-with-resources
     }
